@@ -2,9 +2,7 @@ version: "2.1"
 
 services:
   server:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: ghcr.io/albertbm/opencarwings:main
     environment:
       PSQL_DATABASE: ${PSQL_NAME}
       PSQL_USER: ${PSQL_USERNAME}
